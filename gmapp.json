@@ -1,0 +1,14 @@
+{
+  "name":"Apollo",
+  "id":"24062017",
+  "template": "Blank",
+  "version": "0.0.0",
+  "src": "src",
+  "dist": "dist",
+  "main": "index.html",
+  "icon": "Icon.png",
+  "developer": "Ronak Patel",
+  "category": "General",
+  "type": "RemoteLow",
+  "description": "Generated on 6/24/2017, 2:19:45 PM by ngi-sdk version "
+}

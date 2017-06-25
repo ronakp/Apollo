@@ -30,3 +30,9 @@ function onSuccess(data){
 function onFailure(){
     console.log("All signals in array are invalid");
 }
+
+var id = gm.voice.startTTS(success, 'Notification');
+
+function success() {
+  console.log(id)
+}

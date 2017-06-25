@@ -30,15 +30,34 @@
 
   </head>
   <body>
+    <button id="demo" class="hidden" onclick="nortification()">Demo</button>
+    <div id="nortification" class="hidden">
+      <div class="rect-opac"><p id="speak-nortification"style="font-size: 2em; color: #FFFFFF;"></p></div>
+    </div>
     <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
       <div id="main">
 
+        <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 118.39 38"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill:none;}.cls-3{fill:#3389a8;}.cls-4{fill:#006c92;}.cls-5{mix-blend-mode:overlay;}.cls-6{fill:#d6e7ee;}.cls-7{fill:#003d53;}</style></defs><title>lolo</title><g class="cls-1"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-2" points="5.85 25.27 13.69 25.27 9.94 17.27 5.85 25.27"/><path class="cls-2" d="M28.42,13.49H26v3.95h2.44a2,2,0,0,0,2-2A2,2,0,0,0,28.42,13.49Z"/><path class="cls-3" d="M89.53,19.61,95.06,10h11.07l5.53,9.58-5.53,9.58H95.06Z"/><path class="cls-3" d="M37.27,19.61,42.8,10H53.87l5.53,9.58L53.87,29.2H42.8Z"/><path class="cls-4" d="M48.62,22.5l5.25,6.7,5.53-9.58-8.63-.18Z"/><path class="cls-4" d="M43.48,19.42l-6.21.2L42.8,29.2l2.47-7.3Z"/><path class="cls-3" d="M44.73,15.46h0L42.8,10l-5.53,9.58,6.21-.2Z"/><path class="cls-3" d="M45.27,21.89,42.8,29.2H53.87l-5.25-6.7Z"/><path class="cls-3" d="M49.39,15.42l1.39,4h0l8.63.18L53.87,10Z"/><path class="cls-4" d="M49.35,15.3l0,.12L53.87,10H42.8l1.94,5.43Z"/><image class="cls-5" width="38" height="38" transform="translate(28.39)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsSAAALEgHS3X78AAADZklEQVRYR82Xe1cTMRBHo2B5tSIUUHloKYqKogIi4gtQ9Pt/ozr3ZOY4jbubLOWc+sc99LHd3Pxmkg1hNBqF/5HsBdMie8G0yF5Q+8MQ7pSQu8+tiNUMfreCiSWzF1QIeYGZBipFc2MVi1VI2cCzyr0a7HsvWixYKuUTMpmOMKfMJ9jnHSfpU8zKlUqlQgy+ICwKS0I3YUm/M0kTHJNrLdYgNadCDNwT7gsPhBUH75f1u64TTOUaUysR81KLOtiySvSFdWFDeKhs6Gd9lUSQiSzoPYrkclIziVRPB+urwGNhW9gRnii83hIeqeBqIkdyvudai1kJO3rDrkqt6aAIDYSh8Ex4rvB6N0TJzRAn4OUoaza1OjGf1rzekPL1VWpHhfaFA+GNcKi8Fl6GKDgIMT3kKD2Jp6nlxcLftKy3LK2e3pgBtlXqhQodCSfCqfBBOBbehShMgk9DLDlJM7nK1NqKWW9Rhr4OwED7KoXEmfBZ+KKchyj5PkS5vRATZmEwOVrCp9ZKzDc9M6S3aGTKMtQBj1Tqq3AhXAmXwvcQRUnvbYjJWmpMLi1nZZ+V9Jc1PWVk5vQOaZ2oAFI/hV/CtfBD+BaiNKm9CnExsBAoJ+lTBSY9sRgloBSsNPqGJqdclO5KpX4rSCJLSUmVdEmZtK3Pbl2MxEyMUpnYdRgXo5yfwi2L1fWYrUhKyZZA45+rBOW7VilE6buPIa5Otg4rJT1mpWzdY35ztVXJLNf05rs6GINSTvoMuQsFKdKiB+lF2zLY/9hob9z8dfvYqt6cPiM1SkRzn6rIuXKmUqxIJkAZSZrESZ7WaLePZfrMtgxSG4SYxIEK0EvHCrKHKsUexkSYkC/jPw/zm4j5TZbUmDmNTHlIjn2KLeFA4TUb8FCl2L+YkKWVLWOTWFpOe156OZJjlQ5UYk+hB5GmfHbCsOdkZVpFYhWp+V4zOQZiMbCFkMiWivB3Uz9D3s5kJmUHxsYHeE6sqqT+9OoPi0iuK2v62Ypek55ix85ircQa5Kysdta34/Vygh2r/cm1WKqNmC+rpef/ITHRJfd+IYyf9YulGsUSubTnTND/C+fpVAiNSU0klknPS5robIIXKkqqlVgi5wU9qcSYTBupVmI1gsXk7juxWKlo7nc5shdMi+wF0yJ7wbT4AwrNcRySjBPJAAAAAElFTkSuQmCC"/><path class="cls-6" d="M44.75,15.45h0l-1.26,4,1.8,2.47,3.35.61,2.16-3.07h0l-1.39-4,0-.12Z"/><path class="cls-4" d="M103,19.43l-2.16,3.07,5.25,6.7,5.53-9.58Z"/><path class="cls-4" d="M95.73,19.42l-6.21.2,5.53,9.58,2.47-7.3Z"/><path class="cls-3" d="M97,15.46h0L95.06,10l-5.53,9.58,6.21-.2Z"/><path class="cls-3" d="M97.53,21.89l-2.47,7.3h11.07l-5.25-6.7Z"/><path class="cls-3" d="M103,19.42h0l8.63.18L106.13,10l-4.48,5.39Z"/><path class="cls-4" d="M101.61,15.3l0,.12L106.13,10H95.06L97,15.45Z"/><image class="cls-5" width="38" height="38" transform="translate(80.39)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsSAAALEgHS3X78AAADT0lEQVRYR92XfVPTQBCHVwQsIFAoUKAtyEvlrQ4KglIcRBjG7/+J6v4mv7WbI8ldxJk6/vHMdC57d093N5dERqOR/ItEAyZFNGBSRANKJ4q8SiG2zl8RqxCYCnixZDSgRMhLvC6hVDS2X5JYgZBtPE1mSrDrXjRZLlXKZ8dkZpU3pBFg47NO0mcxKpcqVSQ0p8wrC8rbgAVem6sQrJSrK+WFILCkLCtNZYU0ObbEGC+YLJciFkqZECRayrqyobTJBsdajDHBUK6emDzPVii1zE0hsKV0lJ6yQ3oc22JMi3NCucqsVYlZCdEfjUCqzc13lX3lUHlPDjm2y5h2INfgmlbSWmJhttAnKMkqN+oqe0pfOVEGygcy4FifMV3OWeUa81KQtTpiYbbQ1OidDjc8osRH5VK5IpccGzBmj3PWuUaYtbiYPG96TLZsoRybkpWoz40vlC/KUPlGhhy7YEyfcza5hmUtJyaBXKy/rIzojzUZZwulQlauKXOvPJB7jl0z5kTGWVvjWlbO0j6rErP+wmGJEuAOQ78cKGeSlQzZ+a48Kk/kkWNDxpxxTpdrNLmm77PaYg3Ji+EowF2HEn1WbpUfFPpJnjh2y5gB5/QkL9aQ/1HMlxJ3lS8lmvtGuZOst6yUDxy7YYwvpd2Zf1xKuyv9GYbG3ZaskY+Vc8mOhyFF7skdx64Yc8w521zDn2W170p/XOAxsijjwxWPHZTmVLK7DgJfKTPk7yteO2XsjowP2UWumX5cODl/8vs+Qynwz99Jdj5hY2Tlk2R34CV/n/Nan7Hbki+j76/4AVsg5suJf4q3BTRwhxsiG0eUOCOnHDtkTIdzVrhGeIbVEgvLaVmz5yU2QhZ63BwP7QOyz7EeYzZk/Jy0bFWWsVCsJGvWayaHf49GbnNzZKVLOhxrM8beyRYk31ul2YqJhb1m72TYACVBvyAT9rLoafFak7EmlfQuVipWIWdltXd9bOpfr/1rtQnNy7h8SVKVYk5uSvJltexhM/9B4rH3fPtimpGCL6XKvRPEwsxNO0H/CRfiv4xyPSWRbEXFCgR99rykic4EYxb3O0sxoVpigZwXDEVDkZxQqlQtsRLBZGLrvlgsVTQ2L0Y0YFJEAyZFNGBS/AK8XWYuvctG2wAAAABJRU5ErkJggg=="/><path class="cls-6" d="M101.65,15.42l0-.12-4.6.15h0l-1.26,4,1.8,2.47,3.35.61L103,19.43h0Z"/><path class="cls-7" d="M9.46,9.57,0,28.16v1H19.4v-1L10.61,9.57ZM5.85,25.28l4.09-8,3.75,8Z"/><path class="cls-7" d="M28.42,9.57H22.06V29.2H26V21.36h2.44a5.89,5.89,0,0,0,0-11.79Zm0,7.87H26V13.49h2.44a2,2,0,0,1,2,2A2,2,0,0,1,28.42,17.44Z"/><polygon class="cls-7" points="66.5 9.57 62.58 9.57 62.58 29.17 73.81 29.17 73.81 25.27 66.5 25.27 66.5 9.57"/><polygon class="cls-7" points="81.37 9.57 77.45 9.57 77.45 29.17 88.67 29.17 88.67 25.27 81.37 25.27 81.37 9.57"/></g></g></g></svg>
+        </div>
         <!-- Remove all code inside #main and add your own! -->
-        <h1>Apollo</h1>
-        <p>
+        <div class="welcome-text">
+        <h1> Welcome <span class="user">Aneeq</span></h1>
+        <h4>How your personal AI assistant can help? </h4>
+        </div>
+        <!-- <p>
           Your VIN is: <span id="vin"></span>
-        </p>
+        </p> -->
+
+        <div>
+          <button class="settings">Settings</button>
+        </div>
+
+        <div class="turnoff">
+        <a href="#">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 30.17"><defs><style>.cls-1{fill:#cc1139;}.cls-2{fill:#fff;}</style></defs><title>test</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="30.17" height="30.17"/><path class="cls-2" d="M16.13,9.3v1.65a5.71,5.71,0,1,1-2.35.06V9.34a7.34,7.34,0,1,0,2.35,0Z"/><rect class="cls-2" x="14.29" y="6.29" width="1.34" height="9.19"/></g></g></svg>
+        </a>
+        </div>
 
       </div>
     </div>

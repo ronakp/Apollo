@@ -1,12 +1,70 @@
 /* Your CSS goes here */
+
+body{
+  background-color: #D6E7EE;
+}
+
+h1
+{
+  line-height: 0px;
+  color: #003D53;
+}
+
+a{
+  text-decoration: none;
+}
+h4
+{
+  color: #003D53;
+}
+
+.welcome-text
+{
+text-align: left;
+margin-left: 15%;
+}
+
+span.user
+{
+  color: #1079A0;
+  /*padding-bottom: 3px;
+  border-bottom: 1px solid #1079A0;
+  */
+}
+
+.hidden
+{
+  display: none;
+}
+
+.show
+{
+  display: block !important;
+}
+
+.rect-opac
+{
+  background-color: rgba(79,89,40, 0.8);
+height: auto;
+position: fixed;
+width: 100%;
+top: 48%;
+}
+.rect-opac p
+{
+display: flex;
+justify-content: center;
+}
+
+
 #main {
   text-align: center;
 }
 
 #close {
   position: absolute;
-  top: 90px;
-  right: 0;
+  top: 110px;
+  right: 30px;
   width: 64px;
   height: 64px;
   overflow: hidden;
@@ -14,6 +72,41 @@
 }
 #close img {
   width: 100%;
+}
+
+.logo
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+.logo svg
+{
+  width: 400px;
+}
+
+.turnoff
+{
+    position: fixed;
+    right: 45px;
+}
+
+.turnoff svg
+{
+  width: 50px;
+  height: 50px;
+}
+.settings
+{
+    float: left;
+    margin-left: 15%;
+    background-color: #4F5928;
+    border: none;
+    color: #FFFFFF;
+    padding-left: 15px;
+    padding: 8px 15px 8px 15px;
 }
 
 @media (min-width: 801px) {
